@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Open House Form</title>
+	<link rel="stylesheet" href="css/w3.css">
+	<style>
+		body {
+			background-image: url("images/background.jpg");
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-container w3-blue">
+		<img src="./images/BMW_Riedel.png" alt="" style="width:60px; height:60px; margin-top: 5px;" class="w3-third">
+		<h1 class="w3-center">BMW i8 Raffle</h1>
+	</div>
+	<div class="w3-container">
+		<form class="w3-container" action="toDB.php" method="POST">
+			<p>
+			<input class="w3-black w3-input w3-hover-text-blue w3-text-white" type="text" name="qNum" placeholder="q-Number" id="" required>
+			<input class="w3-black w3-input w3-hover-text-blue w3-text-white" type="text" name="fName" placeholder="First Name" id="" required>
+			<input class="w3-black w3-input w3-hover-text-blue w3-text-white" type="text" name="lName" placeholder="Last Name" id="" required>
+			<input class="w3-black w3-input w3-hover-text-blue w3-text-white" type="email" name="email" placeholder="Email" id="" required></p>
+			<hr>
+			<div style="background-color: rgba(0,0,0,0.3); padding: 8px;">
+			<p>
+			<h5 class="w3-text-blue">Question 1</h5>
+			<h6 class="w3-text-white">Question removed to hide private data</h6>
+			<input class="w3-radio" type="radio" name="ans1" value="0" required>
+			<label class="w3-text-white">Stop</label>
+			<input class="w3-radio" type="radio" name="ans1" value="1" required>
+			<label class="w3-text-white">Speed Limit</label>
+			<input class="w3-radio" type="radio" name="ans1" value="0" required>
+			<label class="w3-text-white">Yield</label>
+			<input class="w3-radio" type="radio" name="ans1" value="0" required>
+			<label class="w3-text-white">No Parking</label></p>
+
+			<p>
+			<h5 class="w3-text-blue">Question 2</h5>
+			<h6 class="w3-text-white">Question removed to hide private data</h6>
+			<input class="w3-radio" type="radio" name="ans2" value="1" required>
+			<label class="w3-text-white">~1400</label>
+			<input class="w3-radio" type="radio" name="ans2" value="0" required>
+			<label class="w3-text-white">~770</label>
+			<input class="w3-radio" type="radio" name="ans2" value="0" required>
+			<label class="w3-text-white">~5000</label>
+			<input class="w3-radio" type="radio" name="ans2" value="0" required>
+			<label class="w3-text-white">~280</label></p>
+
+			<p>
+			<h5 class="w3-text-blue">Question 3</h5>
+			<h6 class="w3-text-white">What speed is the IIHS Small Overlap crash test conducted at?</h6>
+			<input class="w3-radio" type="radio" name="ans3" value="0" required>
+			<label class="w3-text-white">25mph</label>
+			<input class="w3-radio" type="radio" name="ans3" value="0" required>
+			<label class="w3-text-white">35mph</label>
+			<input class="w3-radio" type="radio" name="ans3" value="1" required>
+			<label class="w3-text-white">40mph</label>
+			<input class="w3-radio" type="radio" name="ans3" value="0" required>
+			<label class="w3-text-white">50mph</label></p>
+
+			<p>
+			<h5 class="w3-text-blue">Question 4</h5>
+			<h6 class="w3-text-white">BMW Assist eCall can automatically call for help if you are in a severe accident. What percentage of new vehicles get this option standard?</h6>
+			<input class="w3-radio" type="radio" name="ans4" value="0" required>
+			<label class="w3-text-white">20%</label>
+			<input class="w3-radio" type="radio" name="ans4" value="0" required>
+			<label class="w3-text-white">60%</label>
+			<input class="w3-radio" type="radio" name="ans4" value="0" required>
+			<label class="w3-text-white">80%</label>
+			<input class="w3-radio" type="radio" name="ans4" value="1" required>
+			<label class="w3-text-white">100%</label></p>
+
+			<p>
+			<h5 class="w3-text-blue">Question 5</h5>
+			<h6 class="w3-text-white">Which feature is not yet available, but will be on future BMWs?</h6>
+			<input class="w3-radio" type="radio" name="ans5" value="0" required>
+			<label class="w3-text-white">Gesture Controls</label>
+			<input class="w3-radio" type="radio" name="ans5" value="0" required>
+			<label class="w3-text-white">Wireless Charging</label>
+			<input class="w3-radio" type="radio" name="ans5" value="0" required>
+			<label class="w3-text-white">Speed Limit Information</label>
+			<input class="w3-radio" type="radio" name="ans5" value="1" required>
+			<label class="w3-text-white">All of these are available</label></p>
+			</div>
+			<p><button class="w3-btn w3-blue" type="submit" >Submit</button></p>
+		</form>
+	</div>
+</body>
+</html>
